@@ -1,6 +1,12 @@
+from elements import create_fire
+
+from ..elements import create_air
+from ..potions import strength_potion
+
+
 def lead_to_gold() -> str:
     return (
-        "Recipe transmuting Lead to Gold: brew 'Air element created' and "
-        "'Strength potion brewed with 'Fire element created' and 'Water "
-        "element created' mixed with 'Fire element created'"
+        "Recipe transmuting Lead to Gold: "
+        f"brew '{create_air()}' and '{strength_potion()}' "
+        f"mixed with '{create_fire()}'"
     )

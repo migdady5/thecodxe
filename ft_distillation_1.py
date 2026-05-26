@@ -1,5 +1,7 @@
-from alchemy.potions import create_mana_potion
-from alchemy.potions import create_healing_potion
+import alchemy
 
-print(create_mana_potion())
-print(create_healing_potion())
+print("=== Distillation 1 ===")
+print("Using: 'import alchemy' structure to access potions")
+print(f"Testing strength_potion: {alchemy.strength_potion()}")
+print(f"Testing heal alias: {alchemy.heal()}")
+print()

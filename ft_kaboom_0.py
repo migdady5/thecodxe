@@ -1,6 +1,9 @@
-import alchemy.grimoire.light_spellbook as light
-import alchemy.grimoire.light_validator as validator
+from alchemy.grimoire import light_spell_record
 
-ingredients = ", ".join(light.light_spell_allowed_ingredients())
-validated = validator.validate_ingredients(ingredients)
-print(light.light_spell_record("Fantasy", validated))
+print("=== Kaboom 0 ===")
+print("Using grimoire module directly")
+print(
+    "Testing record light spell: "
+    f"{light_spell_record('Fantasy', 'Earth, wind and fire')}"
+)
+print()
